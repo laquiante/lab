@@ -1,0 +1,9 @@
+#!/bin/bash
+# 15-SEP-2024 Wittduen
+clear
+echo "Das ALQ-Cluster-01 wird erstellt"
+# kind delete cluster --name=alq-cluster-01
+# PATH=$PATH:~/home/alq
+kind create cluster --config+tc.yaml --name alq-cluster-01
+helm install cilum cilium/cilium --version 1.16.1 --namespace kube-system --set image.pullPolicy=IfNotPresent --set ipam.mode=kubernetes
+cilium status --wait
