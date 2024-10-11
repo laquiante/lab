@@ -1,0 +1,5 @@
+WIN11
+WSL
+snap info k9s --> v0.27.4 latest/stable
+
+# snap install k9s --channel=latest/stable
