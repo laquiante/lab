@@ -1,0 +1,17 @@
+# 3 node (2 worker nodes)
+# 15-SEP-2024 Wittduen
+# V0.2
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  image: kindest/node:v1.28.13
+- role: worker
+  image: kindest/node:v1.28.13
+- role: worker
+  image: kindest/node:v1.28.13
+networking:
+  disableDefaultCNI: true
+# standard Adressen
+# Networking.PodSubnet     = "10.244.0.0/16"
+# Networking.ServiceSubnet = "10.96.0.0/12"
