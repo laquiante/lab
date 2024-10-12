@@ -1,5 +1,7 @@
-WIN11
-WSL
-snap info k9s --> v0.27.4 latest/stable
-
+# WIN11
+# WSL
+# snap info k9s --> v0.27.4 latest/stable
 # snap install k9s --channel=latest/stable
+
+# 12-OCT Hamburg
+curl -s -L https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz -o k9s && tar -xvf k9s && chmod 755 k9s && rm LICENSE README.md  && sudo mv k9s /usr/local/bin
