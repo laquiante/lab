@@ -1,0 +1,5 @@
+docker pull frrouting/frr:v8.4.0
+k apply -f bgp-mc.yaml
+k get pods -n routing
+
+Das Konfigfile fehlt aber FRR funktioniert
