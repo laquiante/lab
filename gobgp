@@ -1,0 +1,11 @@
+# grpc Port-Wechsel
+--api-hosts 127.0.0.1 bzw 0.0.0.0:50051 # default auf 
+--api-hosts 127.0.0.1:50052
+
+und fuer den Port 179
+
+[global.config]
+  as = 1234
+  router-id = "172.16.100.1"
+  port = 179 # bzw etwas neues...verwende erstmal 1790
+
